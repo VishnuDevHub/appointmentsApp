@@ -1,0 +1,116 @@
+/* Write your CSS here */
+
+.app-container {
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.card-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%; */
+}
+
+.appoint-img {
+  order: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .appoint-img {
+    order: 1;
+    width: 50%;
+  }
+}
+
+.label-title {
+  color: #b5b7c4;
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.title-input {
+  width: 300px;
+  padding: 10px;
+  font-family: 'Roboto';
+  color: #b5b7c4;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.button-add {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  color: #ffffff;
+  background-color: #8b5cf6;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.appointments-list-container {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .title-input {
+    width: 400px;
+  }
+}
+
+.head-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.stared-button {
+  background-color: transparent;
+  padding-left: 18px;
+  padding-top: 7px;
+  padding-right: 18px;
+  padding-bottom: 7px;
+  border: 1px solid #8b5cf6;
+  border-radius: 19px;
+  color: #8b5cf6;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.active {
+  color: #ffffff;
+  background-color: #8b5cf6;
+  border: none;
+}
